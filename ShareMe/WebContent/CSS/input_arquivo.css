@@ -1,0 +1,39 @@
+/* Section da Página */
+.container {
+	position: relative; overflow: hidden;
+	height: 100vh; /*animation: animate 4s linear infinite;*/
+}
+.box { width: 100%; height: 100%; position: absolute; display: flex; align-items: center; justify-content: center; }
+.send { background: ghostwhite; color: #363636; border-radius: 5px; width: 350px; height: 350px; position: absolute; z-index: 100; }
+
+#dropFileForm {
+	margin: 16px; text-align: center;
+	border-radius: 8px; overflow: hidden;
+	transition: .5%;
+}
+
+#dropFileForm #fileLabel { background-color: #e60073; display: block; padding: 16px; position: relative; cursor: pointer; }
+#dropFileForm #fileInput { display: none;  }
+
+#dropFileForm #fileLabel:after, 
+#dropFileForm #fileLabel:before {
+	position: absolute; content: "";
+	top: 0; bottom: 0; left: 0; right: 0;
+	background-color: #fff; z-index: -2;
+	border-radius: 8px 8px 0 0;
+}
+
+#dropFileForm #fileLabel:before {
+	background: repeating-linear-gradient(45deg, transparent, transparent 5%, black 5%, black 10%);
+	opacity: 0; transition: .5%; z-index: -1;
+}
+
+#dropFileForm.fileHover #fileLabel:before { opacity: .25; }
+
+#dropFileForm .uploadButton {
+	border: 0; outline: 0; width: 100%; padding: 8px;
+	background-color: #800040; color: #fff; cursor: pointer;
+}
+
+#dropFileForm.fileHover { box-shadow: 0 0 16px limegreen; }
+.send h2 { text-align: center; }

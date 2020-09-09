@@ -1,0 +1,30 @@
+button { cursor: pointer; }
+
+.botao {
+	position: absolute; z-index: 1; right: 20px; top: 20px;
+	padding: 10px; background-color: #e60073;
+	color: ghostwhite; border-radius: 10px;
+	box-shadow: 2px 2px ghostwhite;
+	transition: 500ms ease,
+	            color 0.6s ease-out,
+	            box-shadow 0.3s ease 0.2s;
+	margin-right: 5px;	
+	animation: pulsar 1s linear infinite alternate;
+}
+
+.botao:hover {
+	cursor: pointer;
+	color: ghostwhite;
+	box-shadow: 0px 0px 10px #e60073,
+			    0px 0px 40px #e60073,
+			    0px 0px 80px #e60073;
+}
+
+.botao:active {
+	transform: translate(5px, 5px);
+	box-shadow: 0px 0px 10px #e60073,
+			    0px 0px 40px #e60073,
+			    0px 0px 80px #e60073;
+}
+
+@keyframes pulsar { from {  transform: scale(1); } to {  transform: scale(0.9); } }
