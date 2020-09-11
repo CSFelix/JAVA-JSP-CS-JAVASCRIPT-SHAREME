@@ -57,3 +57,11 @@
 - the project can upload till 15 MB, so, if someone knows how to increase this limit, I will appreciate it!!!
 ```
 
+----
+### `✉️ Contact ✉️`
+
+> **Email:** `gabrielfelix08@outlook.com`
+
+> **Linkedin:** `---`
+
+> **Instagram:** `---`
